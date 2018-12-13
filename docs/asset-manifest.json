@@ -1,14 +1,16 @@
 {
-  "main.css": "/pwa-play/static/css/main.f983d772.chunk.css",
-  "main.js": "/pwa-play/static/js/main.60c95f43.chunk.js",
-  "main.js.map": "/pwa-play/static/js/main.60c95f43.chunk.js.map",
-  "static/js/1.82dafdb5.chunk.js": "/pwa-play/static/js/1.82dafdb5.chunk.js",
-  "static/js/1.82dafdb5.chunk.js.map": "/pwa-play/static/js/1.82dafdb5.chunk.js.map",
+  "main.css": "/pwa-play/static/css/main.a08440f7.chunk.css",
+  "main.js": "/pwa-play/static/js/main.e4b591a4.chunk.js",
+  "main.js.map": "/pwa-play/static/js/main.e4b591a4.chunk.js.map",
+  "static/css/1.f8415ec1.chunk.css": "/pwa-play/static/css/1.f8415ec1.chunk.css",
+  "static/js/1.7c4aa621.chunk.js": "/pwa-play/static/js/1.7c4aa621.chunk.js",
+  "static/js/1.7c4aa621.chunk.js.map": "/pwa-play/static/js/1.7c4aa621.chunk.js.map",
   "runtime~main.js": "/pwa-play/static/js/runtime~main.59675f27.js",
   "runtime~main.js.map": "/pwa-play/static/js/runtime~main.59675f27.js.map",
+  "static/css/1.f8415ec1.chunk.css.map": "/pwa-play/static/css/1.f8415ec1.chunk.css.map",
   "static/media/logo.svg": "/pwa-play/static/media/logo.5d5d9eef.svg",
-  "static/css/main.f983d772.chunk.css.map": "/pwa-play/static/css/main.f983d772.chunk.css.map",
+  "static/css/main.a08440f7.chunk.css.map": "/pwa-play/static/css/main.a08440f7.chunk.css.map",
   "index.html": "/pwa-play/index.html",
-  "precache-manifest.b0b0e080f38f74578fb88e9320d556e6.js": "/pwa-play/precache-manifest.b0b0e080f38f74578fb88e9320d556e6.js",
+  "precache-manifest.e0bbd07eef5baffc63d73e712de3a9b8.js": "/pwa-play/precache-manifest.e0bbd07eef5baffc63d73e712de3a9b8.js",
   "service-worker.js": "/pwa-play/service-worker.js"
 }
