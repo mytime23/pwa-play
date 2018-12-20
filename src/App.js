@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import {  Container } from 'reactstrap';
+// import {  Container } from 'reactstrap';
+import Header from './components/Layout/Header';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import About from './components/About';
 import './App.css';
 
 class App extends Component {
@@ -15,8 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <Container fluid>
-          <BrowserRouter>
+        <BrowserRouter>
             <Switch>
               <Route exact path="/" render={() => {
                         const isLogin = sessionStorage.isLogin;
@@ -27,10 +28,10 @@ class App extends Component {
                         }
                     }}/>
               <Route path='/login' component={Login}/>
+              <Route path='/about' component={About}/>
               <Redirect to="/" />
             </Switch>
-          </BrowserRouter>
-      </Container>
+        </BrowserRouter>
     );
   }
 }

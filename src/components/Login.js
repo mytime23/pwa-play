@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+// import { Redirect } from 'react-router-dom';
 import {
   Container, Card, CardHeader, CardBody, CardFooter, Row, Col, Form,
   FormGroup, Label, Input, Alert,
