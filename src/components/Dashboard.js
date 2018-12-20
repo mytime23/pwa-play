@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Layout from '../components/Layout';
-import { TitleProvider} from '../Providers';
+import { PlayProvider} from '../Providers';
 
 class Dashboard extends Component {
 
@@ -14,7 +14,7 @@ class Dashboard extends Component {
  }
   render() {
     return (
-      <TitleProvider>
+      <PlayProvider>
         <Layout>
           <Container fluid>
             <Row className="mt-5">
@@ -25,7 +25,7 @@ class Dashboard extends Component {
             </Row>
           </Container>
         </Layout>
-      </TitleProvider>
+      </PlayProvider>
 
     );
   }

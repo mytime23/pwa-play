@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
 
-export const TitleContext = React.createContext(); // React 16.3 support
+export const PlayContext = React.createContext(); // React 16.3 support
 
-export class TitleProvider extends Component {
+export class PlayProvider extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -31,20 +31,20 @@ export class TitleProvider extends Component {
     }
    
     render() {
-        console.log('登入狀態 : ' , this.state.isLogin);
+        // console.log('登入狀態 : ' , this.state.isLogin);
         let isLogin = this.state.isLogin;
         if(isLogin){
             return( 
-                <TitleContext.Provider value={this.state}>
+                <PlayContext.Provider value={this.state}>
                     {this.props.children}
-                </TitleContext.Provider>)
+                </PlayContext.Provider>)
         } else {
             return <Redirect to="/login"/>
         }
         // return(
-        //     <TitleContext.Provider value={this.state}>
+        //     <PlayContext.Provider value={this.state}>
         //         {this.props.children}
-        //     </TitleContext.Provider>
+        //     </PlayContext.Provider>
         // )
     }
 }

@@ -11,7 +11,7 @@ import {
     Button
  } from 'reactstrap';
 // import '../App.css';
-import {TitleContext} from '../Providers';
+import {PlayContext} from '../Providers';
 
 
 class Layout extends Component {
@@ -25,7 +25,7 @@ class Layout extends Component {
         };
     }
 
-    static contextType = TitleContext; //React 16.6 support
+    static contextType = PlayContext; //React 16.6 support
 
     componentDidMount() {
       let account = sessionStorage.email;
@@ -91,11 +91,11 @@ class Layout extends Component {
               <NavItem>
                 {'  '}
                 <Button outline color="primary" onClick={this.loginOutClick}>
-                <TitleContext.Consumer>
+                <PlayContext.Consumer>
                   { (context) => (
                     <span>{context.account}</span>
                   )}
-                </TitleContext.Consumer> {'  '}
+                </PlayContext.Consumer> {'  '}
                 </Button>
               </NavItem>  
             </Nav>

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Layout from '../components/Layout';
-import {TitleContext, TitleProvider} from '../Providers';
+import {PlayContext, PlayProvider} from '../Providers';
  
-export const AboutContext = React.createContext(); // React 16.3 support
-
 class Info extends Component {
-     static contextType = TitleContext; //React 16.6 support
+     static contextType = PlayContext; //React 16.6 support
 
     toggle = () => {
         this.props.toggle();
@@ -28,11 +26,11 @@ class Info extends Component {
 class List extends Component {
    render() {
        return(
-           <TitleContext.Consumer>
+           <PlayContext.Consumer>
             { (context) => (
                 <h1>This is Title List {context.title}</h1>
             )}
-           </TitleContext.Consumer>
+           </PlayContext.Consumer>
        )
    }
 }
@@ -45,7 +43,7 @@ class About extends Component {
       }
   }
 
-  
+
 
   toggle = () => {
     this.setState({
@@ -62,36 +60,20 @@ class About extends Component {
  }
   render() {
     return (
-        <TitleProvider>
+        <PlayProvider>
           <Layout>
             <Container fluid>
                 <Row className="mt-5">
                     <Col md={{ size: 10, offset: 1 }}>
                         <h1>About</h1>
                         <Button color="success">About {this.state.title}</Button>
-                        <TitleProvider>
-                            <Info toggle={this.toggle} />
-                            <List />
-                        </TitleProvider>
+                        <Info toggle={this.toggle} />
+                        <List />
                     </Col>
                 </Row>
             </Container>
         </Layout>
-        </TitleProvider>
-        // <Layout>
-        //     <Container fluid>
-        //         <Row className="mt-5">
-        //             <Col md={{ size: 10, offset: 1 }}>
-        //                 <h1>About</h1>
-        //                 <Button color="success">About {this.state.title}</Button>
-        //                 <TitleProvider>
-        //                     <Info toggle={this.toggle} />
-        //                     <List />
-        //                 </TitleProvider>
-        //             </Col>
-        //         </Row>
-        //     </Container>
-        // </Layout>
+        </PlayProvider>
     );
   }
 }
