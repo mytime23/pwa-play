@@ -17,9 +17,9 @@ class App extends Component {
 
   render() {
     return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
             <Switch>
-              <Route exact path="/" render={() => {
+              <Route exact path={process.env.PUBLIC_URL + "/"} render={() => {
                         const isLogin = sessionStorage.isLogin;
                         if(isLogin){
                             return <Dashboard/>
