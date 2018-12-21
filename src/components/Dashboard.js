@@ -4,14 +4,6 @@ import Layout from '../components/Layout';
 import { PlayProvider} from '../Providers';
 
 class Dashboard extends Component {
-
- handleClick = () => {
-    sessionStorage.removeItem('email');
-    sessionStorage.removeItem('password');
-    sessionStorage.removeItem('isLogin');
-    //直接重新整理
-    window.location.reload();
- }
   render() {
     return (
       <PlayProvider>

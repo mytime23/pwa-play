@@ -17,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Switch>
               <Route exact path="/" render={() => {
                         const isLogin = sessionStorage.isLogin;
@@ -27,6 +27,7 @@ class App extends Component {
                             return <Redirect to="/login"/>
                         }
                     }}/>
+              <Route path='/dashboard' component={Dashboard}/>      
               <Route path='/login' component={Login}/>
               <Route path='/about' component={About}/>
               <Redirect to="/" />
