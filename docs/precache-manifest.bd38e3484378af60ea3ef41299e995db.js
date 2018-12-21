@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/pwa-play/static/js/runtime~main.59675f27.js"
   },
   {
-    "revision": "6354b95eef076f2abb59",
-    "url": "/pwa-play/static/js/main.6354b95e.chunk.js"
+    "revision": "7422c30736cc4f6e64c7",
+    "url": "/pwa-play/static/js/main.7422c307.chunk.js"
   },
   {
     "revision": "b7d223b14b9841568ff4",
     "url": "/pwa-play/static/js/1.b7d223b1.chunk.js"
   },
   {
-    "revision": "6354b95eef076f2abb59",
+    "revision": "7422c30736cc4f6e64c7",
     "url": "/pwa-play/static/css/main.b07b9334.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/pwa-play/static/css/1.9c04b480.chunk.css"
   },
   {
-    "revision": "c1d952648978bfc0a21f9eea4d7e4034",
+    "revision": "68d54831fb678a1965034047e8441cce",
     "url": "/pwa-play/index.html"
   }
 ];
