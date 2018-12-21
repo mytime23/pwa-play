@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { Router,BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 // import {  Container } from 'reactstrap';
-import Header from './components/Layout/Header';
+import createHistory from "history/createBrowserHistory";
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import About from './components/About';
@@ -17,9 +17,9 @@ class App extends Component {
 
   render() {
     return (
-        <BrowserRouter>
+        <BrowserRouter history={createHistory({ basename: process.env.PUBLIC_URL })}>
             <Switch>
-              <Route exact path={process.env.PUBLIC_URL + "/"} render={() => {
+              <Route exact path='/' render={() => {
                         const isLogin = sessionStorage.isLogin;
                         if(isLogin){
                             return <Dashboard/>

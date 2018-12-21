@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import {
     Collapse,
     Navbar,
@@ -58,7 +58,7 @@ class Layout extends Component {
       sessionStorage.removeItem('password');
       sessionStorage.removeItem('isLogin');
       //直接重新整理
-      window.location.reload();
+      this.props.history.push('/');
     }
 
     toggle() {
@@ -110,4 +110,4 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+export default withRouter(Layout);
